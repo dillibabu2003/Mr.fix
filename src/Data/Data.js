@@ -13,25 +13,30 @@ import {
   //SideBar
 export const SidebarData=[
     {
-        icon: UilUserCircle,
-        heading: "Profile",
-        
-    },
-    {
         icon: UilDashboard,
         heading: "Dashboard",
+        path:"/",
     },
     {
+        icon: UilUserCircle,
+        heading: "Profile",
+        path:"/userprofile",
+    },
+    
+    {
         icon: UilExclamationOctagon ,
-        heading: "Complaints"
+        heading: "Complaints",
+        path:"/complaints",
     },
     {
         icon: UilPackage,
-        heading: 'Manage'
+        heading: 'Manage',
+        path:"/manage",
     },
     {
        icon: UilFeedback ,
-       heading: 'Feedback'   
+       heading: 'Feedback'   ,
+       path:"/feedback",
     }
 ];
 
@@ -72,7 +77,7 @@ export const CardsData=[
         },
         value:"30",
         png: UilSchedule,
-    }
-    
+    }
+    
 
 ]

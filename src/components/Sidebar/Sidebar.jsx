@@ -1,30 +1,25 @@
 // import React, { useEffect } from 'react'
 import './Sidebar.css'
 import { useState } from 'react';
-import { Route,Routes} from 'react-router-dom';
 
 import { SidebarData } from '../../Data/Data';
 import {UilSignOutAlt} from '@iconscout/react-unicons';
-import MainDash from '../MainDash/MainDash';
-import Complaints from '../Complaints/Complaints';
-import Profile from '../Profile/Profile';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Sidebar = () => {
-
+  const navigate=useNavigate('/maindash');
       const[selected,setSelected] = useState(0);
-      // useEffect(()=>{
-      //   console.log("changed ")
-      //   setSelected()
-      // },[selected]);
-      // function changecontent(index){
-      //   console.log(index);
-      // }
+      const handleSidebarItemClick = (index) => {
+        setSelected(index);
+        navigate(SidebarData[index].path); // Assuming you have a 'path' property in each SidebarData item
+      };
+     
 
   return (
-    <>
-      <div className='Sidebar'>
+    
+    <div className='Sidebar'>
         {/* logo */}
           <div className='logo'>
             <img src='https://tinyurl.com/mrfix-logo' alt='img-error'/>
@@ -32,14 +27,14 @@ const Sidebar = () => {
                 Mr.Fix
             </span>
           </div>
-
+          
           {/* menu */}
           <div className='menu'>
               {SidebarData.map((item,index)=>{
                 return(
                   <div className={selected===index?'menuItem active':'menuItem'}
                   key={index}
-                  onClick={()=>setSelected(index)}>
+                  onClick={() => handleSidebarItemClick(index)}>
                         <item.icon/>
                         <span>
                           {item.heading}
@@ -50,16 +45,11 @@ const Sidebar = () => {
               <div className='menuItem'>
                 <UilSignOutAlt/>
               </div>
+            
           </div>
+     
     </div>
-            <Routes>
-              <Route path="/dashboard" element={<MainDash/>}/>
-              <Route path="/complaints" element={<Complaints/>}/>
-              <Route path="/profile" element={<Profile/>}/>
-            </Routes>
-  
-    </>
   )
 }
 
-export default Sidebar;
+export default Sidebar;

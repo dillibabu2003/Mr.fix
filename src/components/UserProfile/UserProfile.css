@@ -1,0 +1,123 @@
+
+
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.profile-container-proimg{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    box-shadow: 5px 5px 40px rgb(70, 56, 56);
+}
+
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-button {
+    padding: 10px 35px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px  rgb(96, 94, 94);
+  }
+  
+  .edit-button:hover {
+    background-color: #1370d2;
+  }
+  
+.details{
+    background-color: #393E46;
+    padding: 10px;
+    margin-top:30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 40px  rgb(2, 2, 2);
+}
+
+.user-id{
+    background-color: #00ADB5;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+}
+
+.user-name{
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+}
+
+.e-mail{
+    background-color: #00ADB5;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+}
+
+.password{
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+}
+
+.phone-no{
+    background-color: #00ADB5;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    padding-left: 20px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 10px  rgb(125, 125, 125);
+}
+.id{
+    margin-left: 90px;
+}
+
+.name{
+    margin-left: 64px;
+
+}
+.mail{
+    margin-left: 100px;
+
+}
+
+.pass{
+    margin-left:78px;
+
+
+}
+
+.number{
+    margin-left: 76px;
+
+}
