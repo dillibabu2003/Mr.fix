@@ -13,25 +13,30 @@ import {
   //SideBar
 export const SidebarData=[
     {
-        icon: UilUserCircle,
-        heading: "Profile",
-        
-    },
-    {
         icon: UilDashboard,
         heading: "Dashboard",
+        path:"/admindashboard",
     },
     {
+        icon: UilUserCircle,
+        heading: "Profile",
+        path:"/profile",
+    },
+    
+    {
         icon: UilExclamationOctagon ,
-        heading: "Complaints"
+        heading: "Complaints",
+        path:"/complaints",
     },
     {
         icon: UilPackage,
-        heading: 'Manage'
+        heading: 'Manage',
+        path:"/manage",
     },
     {
        icon: UilFeedback ,
-       heading: 'Feedback'   
+       heading: 'Feedback'   ,
+       path:"/",
     }
 ];
 
