@@ -6,6 +6,7 @@ export default function Profile(){
     useEffect(() => {
       fetchData();
     }, []);
+    //afwefwefwe
   
     const fetchData = async () => {
       try {
