@@ -4,6 +4,7 @@ import { CardsData } from '../../Data/Data'
 import Card from '../Card/Card'
 
 function Cards() {
+  //egw
   return (
     <div className='Cards'>
     {CardsData.map((card,id)=>{
