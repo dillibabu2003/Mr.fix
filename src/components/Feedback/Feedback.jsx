@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import FeedbackItem from "../FeedbackItem/FeedbackItem";
 
 const Feedback = () => {
   return (
-    <div>Feedback</div>
-  )
-}
+    <div>
+      <FeedbackItem />
+      <FeedbackItem />
+    </div>
+  );
+};
 
-export default Feedback
+export default Feedback;
