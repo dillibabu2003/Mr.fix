@@ -17,7 +17,7 @@ function createData(complaintId,date, complaintDesc,complaintStatus)
 const rows = [
   createData(nanoid(), Date(), 'HCL Lab sys-no:23 Mouse Not working','Completed'),
   createData(nanoid(), Date(), 'Wipro Lab sys-no:22 No Internet Connection','Pending'),
-  createData(nanoid(), Date(), '3rd year CSE-A Projector not Working','In Progress'),
+  createData(nanoid(), Date(), '2nd year CSE-A Projector not Working','In Progress'),
 ];
 
 const makeStyles=(complaintStatus)=>{
