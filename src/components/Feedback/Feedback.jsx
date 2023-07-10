@@ -5,6 +5,9 @@ const Feedback = () => {
   return (
     <div>
       <FeedbackItem />
+      <br></br>
+      <br></br>
+      <FeedbackItem />
     </div>
   );
 };
